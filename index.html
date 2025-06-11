@@ -1,0 +1,1499 @@
+</section>
+
+    <!-- Power Calculator Section -->
+    <section class="section fade-in" id="calculator">
+        <h2 class="section-title">⚡ CALCULATEUR DE PUISSANCE</h2>
+        <div class="calculator">
+            <p style="text-align: center; font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                Sélectionne tes composants pour calculer automatiquement la puissance d'alimentation recommandée
+            </p>
+            <div class="calculator-grid">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="gpu-select">🎮 Carte Graphique (GPU)</label>
+                        <select id="gpu-select">
+                            <option value="">-- Sélectionner un GPU --</option>
+                            <optgroup label="🟩 NVIDIA GTX">
+                                <option value="75">GTX 1650 (75W)</option>
+                                <option value="120">GTX 1660 / 1660 Super (120W)</option>
+                                <option value="125">GTX 1660 Ti (125W)</option>
+                            </optgroup>
+                            <optgroup label="🟩 NVIDIA RTX 20-Series">
+                                <option value="160">RTX 2060 (160W)</option>
+                                <option value="175">RTX 2060 Super (175W)</option>
+                                <option value="215">RTX 2070 / 2070 Super (215W)</option>
+                            </optgroup>
+                            <optgroup label="🟩 NVIDIA RTX 30-Series">
+                                <option value="170">RTX 3060 (170W)</option>
+                                <option value="200">RTX 3060 Ti (200W)</option>
+                                <option value="220">RTX 3070 (220W)</option>
+                                <option value="290">RTX 3070 Ti (290W)</option>
+                                <option value="320">RTX 3080 (320W)</option>
+                                <option value="350">RTX 3080 Ti (350W)</option>
+                                <option value="350">RTX 3090 (350W)</option>
+                                <option value="450">RTX 3090 Ti (450W)</option>
+                            </optgroup>
+                            <optgroup label="🟩 NVIDIA RTX 40-Series">
+                                <option value="115">RTX 4060 (115W)</option>
+                                <option value="165">RTX 4060 Ti (165W)</option>
+                                <option value="200">RTX 4070 (200W)</option>
+                                <option value="285">RTX 4070 Ti (285W)</option>
+                                <option value="320">RTX 4080 (320W)</option>
+                                <option value="450">RTX 4090 (450W)</option>
+                            </optgroup>
+                            <optgroup label="🟥 AMD RX 500 Series">
+                                <option value="50">RX 550 (50W)</option>
+                                <option value="75">RX 560 (75W)</option>
+                                <option value="150">RX 570 (150W)</option>
+                                <option value="185">RX 580 (185W)</option>
+                                <option value="175">RX 590 (175W)</option>
+                            </optgroup>
+                            <optgroup label="🟥 AMD RX 5000 Series">
+                                <option value="130">RX 5500 XT (130W)</option>
+                                <option value="150">RX 5600 XT (150W)</option>
+                                <option value="180">RX 5700 (180W)</option>
+                                <option value="225">RX 5700 XT (225W)</option>
+                            </optgroup>
+                            <optgroup label="🟥 AMD RX 6000 Series">
+                                <option value="132">RX 6600 (132W)</option>
+                                <option value="160">RX 6600 XT (160W)</option>
+                                <option value="176">RX 6650 XT (176W)</option>
+                                <option value="230">RX 6700 XT (230W)</option>
+                                <option value="250">RX 6750 XT (250W)</option>
+                                <option value="250">RX 6800 (250W)</option>
+                                <option value="300">RX 6800 XT (300W)</option>
+                                <option value="300">RX 6900 XT (300W)</option>
+                                <option value="335">RX 6950 XT (335W)</option>
+                            </optgroup>
+                            <optgroup label="🟥 AMD RX 7000 Series">
+                                <option value="165">RX 7600 (165W)</option>
+                                <option value="245">RX 7700 XT (245W)</option>
+                                <option value="263">RX 7800 XT (263W)</option>
+                                <option value="315">RX 7900 XT (315W)</option>
+                                <option value="355">RX 7900 XTX (355W)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpu-select">🧠 Processeur (CPU)</label>
+                        <select id="cpu-select">
+                            <option value="">-- Sélectionner un CPU --</option>
+                            <optgroup label="🔵 Intel Core i3">
+                                <option value="65">i3-10100 / 12100F / 13100F (65W)</option>
+                            </optgroup>
+                            <optgroup label="🔵 Intel Core i5">
+                                <option value="65">i5-10400F / 11400F / 12400F (65W)</option>
+                                <option value="125">i5-13400F / 13600KF (125W)</option>
+                            </optgroup>
+                            <optgroup label="🔵 Intel Core i7">
+                                <option value="125">i7-10700K / 11700K (125W)</option>
+                                <option value="125">i7-12700KF / 13700KF (125W)</option>
+                            </optgroup>
+                            <optgroup label="🔵 Intel Core i9">
+                                <option value="125">i9-10900K / 11900K (125W)</option>
+                                <option value="125">i9-12900K / 13900K (125W)</option>
+                            </optgroup>
+                            <optgroup label="🔴 AMD Ryzen 3">
+                                <option value="65">Ryzen 3 3100 / 3300X (65W)</option>
+                            </optgroup>
+                            <optgroup label="🔴 AMD Ryzen 5">
+                                <option value="65">Ryzen 5 3600 / 5600 (65W)</option>
+                                <option value="105">Ryzen 5 5600X / 7600X (105W)</option>
+                            </optgroup>
+                            <optgroup label="🔴 AMD Ryzen 7">
+                                <option value="65">Ryzen 7 3700X (65W)</option>
+                                <option value="105">Ryzen 7 5800X / 5800X3D (105W)</option>
+                                <option value="105">Ryzen 7 7700X / 7800X3D (105W)</option>
+                            </optgroup>
+                            <optgroup label="🔴 AMD Ryzen 9">
+                                <option value="105">Ryzen 9 5900X (105W)</option>
+                                <option value="105">Ryzen 9 5950X (105W)</option>
+                                <option value="170">Ryzen 9 7900X / 7950X (170W)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ram-select">💾 Mémoire RAM</label>
+                        <select id="ram-select">
+                            <option value="5">16 Go DDR4 (5W)</option>
+                            <option value="8">32 Go DDR4 (8W)</option>
+                            <option value="7">16 Go DDR5 (7W)</option>
+                            <option value="10">32 Go DDR5 (10W)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="storage-select">💽 Stockage</label>
+                        <select id="storage-select">
+                            <option value="3">1x SSD NVMe (3W)</option>
+                            <option value="6">1x SSD NVMe + 1x HDD (9W)</option>
+                            <option value="6">2x SSD NVMe (6W)</option>
+                            <option value="12">2x SSD NVMe + 1x HDD (15W)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cooling-select">🧊 Refroidissement</label>
+                        <select id="cooling-select">
+                            <option value="2">Ventirad stock (2W)</option>
+                            <option value="5">Ventirad Tower (5W)</option>
+                            <option value="8">AIO 240mm (8W)</option>
+                            <option value="15">AIO 360mm + ventilateurs boîtier (15W)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="extras-select">⚡ Extras</label>
+                        <select id="extras-select">
+                            <option value="0">Aucun extra</option>
+                            <option value="10">RGB + Wi-Fi (10W)</option>
+                            <option value="15">Capture card + USB hubs (15W)</option>
+                            <option value="25">Setup streaming complet (25W)</option>
+                        </select>
+                    </div>
+
+                    <button class="calculate-btn" onclick="calculatePower()">
+                        🔥 CALCULER LA PUISSANCE
+                    </button>
+                </div>
+
+                <div class="calculator-result" id="result-panel">
+                    <div style="opacity: 0.5;">
+                        <span class="component-icon" style="font-size: 4rem;">⚡</span>
+                        <h3 style="color: var(--text-secondary); margin-top: 1rem;">
+                            Sélectionne tes composants pour voir la puissance recommandée
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion --><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC GAMER ELITE - Guide Ultime</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --primary-color: #ff6b35;
+            --secondary-color: #00d4ff;
+            --accent-color: #f39c12;
+            --dark-bg: #0a0a0a;
+            --dark-card: #1a1a1a;
+            --text-light: #ffffff;
+            --text-secondary: #cccccc;
+            --glow-blue: #00d4ff;
+            --glow-orange: #ff6b35;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-light);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(243, 156, 18, 0.1) 0%, transparent 50%);
+            animation: bgPulse 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes bgPulse {
+            0% { transform: scale(1) rotate(0deg); opacity: 0.5; }
+            100% { transform: scale(1.1) rotate(5deg); opacity: 0.8; }
+        }
+
+        /* Scrollbar Style */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--dark-bg); }
+        ::-webkit-scrollbar-thumb { 
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 4px;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+            text-shadow: 0 0 10px var(--glow-blue);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+            animation: heroFadeIn 2s ease-out;
+        }
+
+        @keyframes heroFadeIn {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: titleGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleGlow {
+            0% { filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.5)); }
+            100% { filter: drop-shadow(0 0 40px rgba(255, 107, 53, 0.7)); }
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(255, 107, 53, 0.5);
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        /* 3D Floating Elements */
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .floating-cube {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            transform-style: preserve-3d;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.1;
+        }
+
+        .floating-cube:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+        .floating-cube:nth-child(2) { top: 60%; right: 15%; animation-delay: 2s; }
+        .floating-cube:nth-child(3) { bottom: 30%; left: 20%; animation-delay: 4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotateX(0) rotateY(0); }
+            33% { transform: translateY(-20px) rotateX(45deg) rotateY(45deg); }
+            66% { transform: translateY(10px) rotateX(-45deg) rotateY(90deg); }
+        }
+
+        /* Sections */
+        .section {
+            padding: 100px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+
+        /* Component Cards */
+        .components-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .component-card {
+            background: rgba(26, 26, 26, 0.8);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            backdrop-filter: blur(10px);
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            transform-style: preserve-3d;
+        }
+
+        .component-card:hover {
+            transform: translateY(-10px) rotateX(5deg);
+            border-color: var(--primary-color);
+            box-shadow: 
+                0 20px 40px rgba(0, 212, 255, 0.2),
+                0 0 50px rgba(255, 107, 53, 0.1);
+        }
+
+        .component-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+            transform: scaleX(0);
+            transition: transform 0.5s ease;
+        }
+
+        .component-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .component-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .component-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .component-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .component-recommendations {
+            list-style: none;
+        }
+
+        .component-recommendations li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+
+        .component-recommendations li:hover {
+            color: var(--secondary-color);
+        }
+
+        .component-recommendations strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* Priority Badge */
+        .priority-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Conclusion Section */
+        .conclusion {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 107, 53, 0.1));
+            border-radius: 30px;
+            padding: 3rem;
+            text-align: center;
+            margin: 3rem 0;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .conclusion::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%),
+                radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .conclusion-quote {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(10, 10, 10, 0.95);
+            padding: 2rem 5%;
+            text-align: center;
+            border-top: 1px solid rgba(0, 212, 255, 0.3);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Responsive Design */
+        /* Calculator Section */
+        .calculator {
+            background: rgba(26, 26, 26, 0.9);
+            border-radius: 30px;
+            padding: 3rem;
+            margin: 3rem 0;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            backdrop-filter: blur(20px);
+        }
+
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .calculator-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            color: var(--text-light);
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-group select {
+            background: rgba(10, 10, 10, 0.8);
+            color: var(--text-light);
+            border: 2px solid rgba(0, 212, 255, 0.3);
+            border-radius: 10px;
+            padding: 12px 15px;
+            font-size: 1rem;
+            font-family: 'Rajdhani', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+        }
+
+        .form-group select option {
+            background: var(--dark-bg);
+            color: var(--text-light);
+            padding: 10px;
+        }
+
+        .calculate-btn {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Rajdhani', sans-serif;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+        }
+
+        .calculate-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.5);
+        }
+
+        .calculator-result {
+            background: rgba(10, 10, 10, 0.8);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 2px solid rgba(0, 212, 255, 0.3);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            min-height: 400px;
+        }
+
+        .result-power {
+            font-family: 'Orbitron', monospace;
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .result-recommendation {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .result-details {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .power-breakdown {
+            background: rgba(0, 212, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .breakdown-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .breakdown-item:last-child {
+            border-bottom: none;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        /* Enhanced Component Cards */
+        .component-specs {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(0, 212, 255, 0.05);
+            border-radius: 10px;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.3rem 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .spec-value {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .components-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .section {
+                padding: 50px 5%;
+            }
+            
+            .calculator-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .result-power {
+                font-size: 2rem;
+            }
+        }
+
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Particle Effect */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--secondary-color);
+            border-radius: 50%;
+            animation: particleFloat 15s linear infinite;
+        }
+
+        @keyframes particleFloat {
+            0% { 
+                transform: translateY(100vh) translateX(0) scale(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% { 
+                transform: translateY(-10vh) translateX(100px) scale(1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">PC GAMER ELITE</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#guide">Guide</a></li>
+                <li><a href="#components">Composants</a></li>
+                <li><a href="#calculator">Calculateur</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-elements">
+            <div class="floating-cube"></div>
+            <div class="floating-cube"></div>
+            <div class="floating-cube"></div>
+        </div>
+        <div class="hero-content">
+            <h1>GUIDE ULTIME</h1>
+            <p class="hero-subtitle">Construire un PC Gamer de Légende</p>
+            <a href="#guide" class="cta-button">Commencer le Build</a>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section fade-in" id="guide">
+        <h2 class="section-title">🔧 MISSION GAMING</h2>
+        <div class="conclusion">
+            <p style="font-size: 1.3rem; color: var(--text-light); line-height: 1.8;">
+                Construire son propre PC gamer, c'est l'assurance d'avoir la <strong style="color: var(--primary-color);">meilleure performance</strong> 
+                au <strong style="color: var(--secondary-color);">meilleur prix</strong>. 
+                Ce guide t'accompagne dans une démarche logique, sans parler de budget, 
+                mais en te disant ce qu'il faut acheter en priorité et pourquoi.
+            </p>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section class="section fade-in" id="components">
+        <h2 class="section-title">⚡ COMPOSANTS ELITE</h2>
+        <div class="components-grid">
+            <!-- GPU Card -->
+            <div class="component-card">
+                <div class="priority-badge">Priorité #1</div>
+                <span class="component-icon">🎮</span>
+                <h3 class="component-title">Carte Graphique (GPU)</h3>
+                <p class="component-description">
+                    C'est le cœur du gaming et souvent le composant le plus cher. 
+                    Elle s'occupe de tout le rendu visuel (FPS, résolution, Ray-Tracing).
+                </p>
+                <ul class="component-recommendations">
+                    <li><strong>GTX 1650:</strong> 75W - Parfait pour débuter</li>
+                    <li><strong>RTX 3060:</strong> 170W - Sweet spot 1080p</li>
+                    <li><strong>RTX 4070:</strong> 200W - Excellent 1440p</li>
+                    <li><strong>RTX 4080:</strong> 320W - Beast 4K</li>
+                    <li><strong>RX 6600 XT:</strong> 160W - AMD économique</li>
+                    <li><strong>RX 7800 XT:</strong> 263W - Performance/prix</li>
+                </ul>
+                <div class="component-specs">
+                    <div class="spec-item">
+                        <span>Résolution optimale:</span>
+                        <span class="spec-value">1080p à 4K selon modèle</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Ray-Tracing:</span>
+                        <span class="spec-value">RTX 3060+ / RX 6000+</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>DLSS/FSR:</span>
+                        <span class="spec-value">Boost FPS gratuit</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CPU Card -->
+            <div class="component-card">
+                <div class="priority-badge">Priorité #2</div>
+                <span class="component-icon">🧠</span>
+                <h3 class="component-title">Processeur (CPU)</h3>
+                <p class="component-description">
+                    Le processeur est le cerveau du PC. Il détermine la puissance brute 
+                    disponible pour le jeu, le streaming ou le multitâche.
+                </p>
+                <ul class="component-recommendations">
+                    <li><strong>Intel i3:</strong> 10100, 12100F, 13100F (65W)</li>
+                    <li><strong>Intel i5:</strong> 12400F, 13400F, 13600KF (65-125W)</li>
+                    <li><strong>Intel i7:</strong> 12700KF, 13700KF (125W)</li>
+                    <li><strong>AMD Ryzen 5:</strong> 5600X, 7600X (65-105W)</li>
+                    <li><strong>AMD Ryzen 7:</strong> 5800X3D, 7800X3D (105W)</li>
+                    <li><strong>AMD Ryzen 9:</strong> 7900X, 7950X (170W)</li>
+                </ul>
+                <div class="component-specs">
+                    <div class="spec-item">
+                        <span>Gaming optimal:</span>
+                        <span class="spec-value">6-8 cœurs</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Streaming:</span>
+                        <span class="spec-value">8+ cœurs recommandés</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Bottleneck:</span>
+                        <span class="spec-value">Équilibrer avec GPU</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Motherboard Card -->
+            <div class="component-card">
+                <div class="priority-badge">Priorité #3</div>
+                <span class="component-icon">🔩</span>
+                <h3 class="component-title">Carte Mère</h3>
+                <p class="component-description">
+                    La carte mère est le centre de connexion de tous les composants. 
+                    Elle doit être compatible avec le CPU et offrir les ports nécessaires.
+                </p>
+                <ul class="component-recommendations">
+                    <li><strong>Intel:</strong> B660, B760 (budget) / Z690, Z790 (OC)</li>
+                    <li><strong>AMD:</strong> B550, B650 (budget) / X570, X670 (premium)</li>
+                    <li><strong>Sockets:</strong> LGA 1700 (Intel) / AM4/AM5 (AMD)</li>
+                    <li><strong>Features clés:</strong> 2+ M.2, 4 slots RAM, USB-C</li>
+                    <li><strong>VRM:</strong> Important pour CPU haut de gamme</li>
+                    <li><strong>WiFi 6/6E:</strong> Optionnel mais pratique</li>
+                </ul>
+                <div class="component-specs">
+                    <div class="spec-item">
+                        <span>Format:</span>
+                        <span class="spec-value">ATX > mATX > Mini-ITX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>PCIe 4.0:</span>
+                        <span class="spec-value">Pour GPU et SSD récents</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Ethernet:</span>
+                        <span class="spec-value">2.5 Gb/s recommandé</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RAM Card -->
+            <div class="component-card">
+                <div class="priority-badge">Priorité #4</div>
+                <span class="component-icon">💾</span>
+                <h3 class="component-title">Mémoire Vive (RAM)</h3>
+                <p class="component-description">
+                    La RAM permet de garder en mémoire les données utilisées en temps réel. 
+                    16 Go minimum, 32 Go pour le confort total.
+                </p>
+                <ul class="component-recommendations">
+                    <li><strong>DDR4:</strong> 16-32 Go à 3200-3600 MHz (économique)</li>
+                    <li><strong>DDR5:</strong> 16-32 Go à 5600-6000 MHz (futur)</li>
+                    <li><strong>Gaming:</strong> 16 Go suffisent, 32 Go confort</li>
+                    <li><strong>Streaming:</strong> 32 Go recommandés</li>
+                    <li><strong>Marques:</strong> Corsair, G.Skill, Crucial, Kingston</li>
+                    <li><strong>Latence:</strong> CL16 (DDR4) / CL30 (DDR5)</li>
+                </ul>
+                <div class="component-specs">
+                    <div class="spec-item">
+                        <span>Dual Channel:</span>
+                        <span class="spec-value">2x8 Go ou 2x16 Go</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>XMP/DOCP:</span>
+                        <span class="spec-value">Activer dans BIOS</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Consommation:</span>
+                        <span class="spec-value">5-10W total</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Storage Card -->
+            <div class="component-card">
+                <div class="priority-badge">Priorité #5</div>
+                <span class="component-icon">💽</span>
+                <h3 class="component-title">Stockage (SSD)</h3>
+                <p class="component-description">
+                    Les SSD permettent un système ultra-rapide. 
+                    Priorité au NVMe Gen4 pour des temps de chargement éclair.
+                </p>
+                <ul class="component-recommendations">
+                    <li><strong>SSD SATA:</strong> Crucial MX500, Samsung 870 EVO</li>
+                    <li><strong>NVMe Gen3:</strong> WD Blue SN570, Kingston NV1</li>
+                    <li><strong>NVMe Gen4:</strong> Samsung 980 Pro, WD SN850X</li>
+                    <li><strong>Capacité:</strong> 1 To minimum, 2 To confort</li>
+                    <li><strong>HDD backup:</strong> Seagate Barracuda 2-4 To</li>
+                    <li><strong>Gaming:</strong> Gen4 pour temps de chargement</li>
+                </ul>
+                <div class="component-specs">
+                    <div class="spec-item">
+                        <span>Vitesse lecture:</span>
+                        <span class="spec-value">7000 MB/s (Gen4)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Endurance:</span>
+                        <span class="spec-value">600-1200 TBW</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Consommation:</span>
+                        <span class="spec-value">2-5W (SSD) / 6-10W (HDD)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PSU Card -->
+            <div class="component-card">
+                <div class="priority-badge">Priorité #6</div>
+                <span class="component-icon">⚡</span>
+                <h3 class="component-title">Alimentation (PSU)</h3>
+                <p class="component-description">
+                    L'alim fournit l'énergie. Il faut la choisir en fonction de la 
+                    consommation GPU+CPU avec une marge de sécurité.
+                </p>
+                <ul class="component-recommendations">
+                    <li><strong>450W:</strong> GTX 1650, RX 550/560 (build budget)</li>
+                    <li><strong>500W:</strong> GTX 1660 à RX 6600 (1080p gaming)</li>
+                    <li><strong>650W:</strong> RTX 3060-3070 / RX 6700-6800 XT</li>
+                    <li><strong>750W:</strong> RTX 3080-4070 / RX 6900-7800 XT</li>
+                    <li><strong>850W:</strong> RTX 4080 / RX 7900 XT/XTX</li>
+                    <li><strong>1000W+:</strong> RTX 4090 / Builds extrêmes</li>
+                </ul>
+                <div class="component-specs">
+                    <div class="spec-item">
+                        <span>Certification:</span>
+                        <span class="spec-value">80+ Gold minimum</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Modularité:</span>
+                        <span class="spec-value">Full/Semi modulaire</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Marques sûres:</span>
+                        <span class="spec-value">Corsair, Seasonic, BeQuiet</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cooling Card -->
+            <div class="component-card">
+                <div class="priority-badge">Priorité #7</div>
+                <span class="component-icon">🧊</span>
+                <h3 class="component-title">Refroidissement</h3>
+                <p class="component-description">
+                    Un bon refroidissement améliore durée de vie, silence et stabilité. 
+                    Vital pour les versions X/X3D/KF des processeurs.
+                </p>
+                <ul class="component-recommendations">
+                    <li><strong>Air Budget:</strong> Arctic Freezer 34, Hyper 212</li>
+                    <li><strong>Air Premium:</strong> Noctua NH-D15, DeepCool AK620</li>
+                    <li><strong>AIO 240mm:</strong> Arctic Liquid Freezer II, Kraken X53</li>
+                    <li><strong>AIO 280/360mm:</strong> Pour CPU très haut de gamme</li>
+                    <li><strong>Compatibilité:</strong> Vérifier hauteur/radiateur</li>
+                    <li><strong>Bruit:</strong> Noctua pour silence absolu</li>
+                </ul>
+                <div class="component-specs">
+                    <div class="spec-item">
+                        <span>TDP supporté:</span>
+                        <span class="spec-value">65W à 250W selon modèle</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Niveau sonore:</span>
+                        <span class="spec-value">15-35 dB(A)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Consommation:</span>
+                        <span class="spec-value">2-15W (ventilateurs)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Card -->
+            <div class="component-card">
+                <div class="priority-badge">Priorité #8</div>
+                <span class="component-icon">🖥</span>
+                <h3 class="component-title">Boîtier</h3>
+                <p class="component-description">
+                    Le boîtier influence l'aération, l'esthétique et l'espace disponible. 
+                    Il doit accueillir tous les composants choisis.
+                </p>
+                <ul class="component-recommendations">
+                    <li><strong>Mini-ITX:</strong> Compact mais limité (NR200, H210)</li>
+                    <li><strong>Micro-ATX:</strong> Bon compromis (Versa H18, Focus G)</li>
+                    <li><strong>ATX Mid:</strong> Standard optimal (Meshify C, H5 Flow)</li>
+                    <li><strong>ATX Full:</strong> Maximum espace (O11 Dynamic, 7000D)</li>
+                    <li><strong>Airflow:</strong> Mesh front > solid front</li>
+                    <li><strong>Features:</strong> Tempered glass, USB-C, filtres</li>
+                </ul>
+                <div class="component-specs">
+                    <div class="spec-item">
+                        <span>GPU max:</span>
+                        <span class="spec-value">320-400mm selon boîtier</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Ventilateurs:</span>
+                        <span class="spec-value">2 intake + 1-2 exhaust</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Prix moyen:</span>
+                        <span class="spec-value">60-200€ selon gamme</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="section fade-in" id="conclusion">
+        <h2 class="section-title">🔥 MISSION ACCOMPLIE</h2>
+        <div class="conclusion">
+            <p class="conclusion-quote">
+                "Un bon PC, ce n'est pas le plus cher...
+                c'est celui qui te fait kiffer à 100 FPS sans ramer !"
+            </p>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); margin-top: 2rem;">
+                Construire un PC gaming, c'est une question de <strong style="color: var(--primary-color);">logique</strong>, 
+                de <strong style="color: var(--secondary-color);">compatibilité</strong> et de 
+                <strong style="color: var(--accent-color);">priorités</strong>. 
+                La carte graphique est le point de départ, puis on construit autour.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 PC GAMER ELITE - Guide Ultime pour Builders Passionnés</p>
+            <p style="margin-top: 1rem; color: var(--text-secondary);">
+                By <strong style="color: var(--primary-color);">Josoa Ricardo ANDRIAMITANTSOA</strong>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Particle system
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Mouse move parallax effect
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX / window.innerWidth;
+            const mouseY = e.clientY / window.innerHeight;
+            
+            document.querySelectorAll('.floating-cube').forEach((cube, index) => {
+                const speed = (index + 1) * 0.5;
+                const x = (mouseX - 0.5) * speed * 50;
+                const y = (mouseY - 0.5) * speed * 50;
+                cube.style.transform = `translate(${x}px, ${y}px) rotateX(${y}deg) rotateY(${x}deg)`;
+            });
+        });
+
+        // Component card 3D tilt effect
+        document.querySelectorAll('.component-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 10;
+                const rotateY = (centerX - x) / 10;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
+            });
+        });
+
+        // Typing animation for hero title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize animations when page loads
+        window.addEventListener('load', () => {
+            createParticles();
+            
+            // Add glitch effect to title occasionally
+            setInterval(() => {
+                const title = document.querySelector('.hero h1');
+                if (Math.random() < 0.1) { // 10% chance
+                    title.style.textShadow = '2px 0 #ff6b35, -2px 0 #00d4ff';
+                    setTimeout(() => {
+                        title.style.textShadow = 'none';
+                    }, 150);
+                }
+            }, 3000);
+        });
+
+        // Progress indicator
+        window.addEventListener('scroll', () => {
+            const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            document.querySelector('.header').style.background = 
+                `linear-gradient(90deg, rgba(0, 212, 255, 0.3) ${scrolled}%, rgba(10, 10, 10, 0.95) ${scrolled}%)`;
+        });
+
+        // Dynamic background color based on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+            const hue1 = 200 + (scrollPercent * 60); // Blue to cyan
+            const hue2 = 15 + (scrollPercent * 45);  // Orange to yellow
+            
+            document.querySelector('.bg-animation').style.background = `
+                radial-gradient(circle at 20% 50%, hsla(${hue1}, 100%, 50%, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, hsla(${hue2}, 100%, 50%, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, hsla(45, 100%, 50%, 0.1) 0%, transparent 50%)
+            `;
+        });
+
+        // Power Calculator Function
+        function calculatePower() {
+            const gpu = parseInt(document.getElementById('gpu-select').value) || 0;
+            const cpu = parseInt(document.getElementById('cpu-select').value) || 0;
+            const ram = parseInt(document.getElementById('ram-select').value) || 5;
+            const storage = parseInt(document.getElementById('storage-select').value) || 3;
+            const cooling = parseInt(document.getElementById('cooling-select').value) || 2;
+            const extras = parseInt(document.getElementById('extras-select').value) || 0;
+
+            if (gpu === 0 || cpu === 0) {
+                document.getElementById('result-panel').innerHTML = `
+                    <div style="color: var(--primary-color);">
+                        <span class="component-icon" style="font-size: 3rem;">⚠️</span>
+                        <h3>Sélectionne au minimum un GPU et un CPU</h3>
+                    </div>
+                `;
+                return;
+            }
+
+            // Calcul de la consommation totale
+            const totalConsumption = gpu + cpu + ram + storage + cooling + extras;
+            
+            // Marge de sécurité de 20% + 50W pour les pics
+            const recommendedPower = Math.ceil((totalConsumption * 1.2 + 50) / 50) * 50;
+            
+            // Déterminer la certification et le prix estimé
+            let certification, priceRange, efficiency;
+            if (recommendedPower <= 500) {
+                certification = "80+ Bronze";
+                priceRange = "60-80€";
+                efficiency = "85%";
+            } else if (recommendedPower <= 650) {
+                certification = "80+ Gold";
+                priceRange = "80-120€";
+                efficiency = "90%";
+            } else if (recommendedPower <= 750) {
+                certification = "80+ Gold";
+                priceRange = "100-150€";
+                efficiency = "90%";
+            } else if (recommendedPower <= 850) {
+                certification = "80+ Gold/Platinum";
+                priceRange = "130-200€";
+                efficiency = "92%";
+            } else {
+                certification = "80+ Platinum/Titanium";
+                priceRange = "200-400€";
+                efficiency = "94%";
+            }
+
+            // Recommandations de modèles
+            let modelRecommendations = "";
+            if (recommendedPower <= 500) {
+                modelRecommendations = "Corsair CV450, BeQuiet Pure Power 11 400W";
+            } else if (recommendedPower <= 650) {
+                modelRecommendations = "Corsair RM650x, Seasonic Focus GX-650";
+            } else if (recommendedPower <= 750) {
+                modelRecommendations = "Corsair RM750x, BeQuiet Straight Power 11 750W";
+            } else if (recommendedPower <= 850) {
+                modelRecommendations = "Seasonic Focus PX-850, Corsair RM850x";
+            } else {
+                modelRecommendations = "Corsair HX1000, Seasonic Prime TX-1000";
+            }
+
+            // Niveau de build
+            let buildLevel = "";
+            if (totalConsumption <= 200) {
+                buildLevel = "🟢 Build Économique";
+            } else if (totalConsumption <= 400) {
+                buildLevel = "🟡 Build Milieu de Gamme";
+            } else if (totalConsumption <= 600) {
+                buildLevel = "🟠 Build Haut de Gamme";
+            } else {
+                buildLevel = "🔴 Build Extrême";
+            }
+
+            document.getElementById('result-panel').innerHTML = `
+                <div class="result-power">${recommendedPower}W</div>
+                <div class="result-recommendation">Alimentation Recommandée</div>
+                <div class="result-details">
+                    <strong style="color: var(--secondary-color);">${buildLevel}</strong><br>
+                    Consommation réelle: ${totalConsumption}W<br>
+                    Marge de sécurité incluse
+                </div>
+                
+                <div class="power-breakdown">
+                    <div class="breakdown-item">
+                        <span>🎮 GPU:</span>
+                        <span>${gpu}W</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span>🧠 CPU:</span>
+                        <span>${cpu}W</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span>💾 RAM:</span>
+                        <span>${ram}W</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span>💽 Stockage:</span>
+                        <span>${storage}W</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span>🧊 Refroidissement:</span>
+                        <span>${cooling}W</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span>⚡ Extras:</span>
+                        <span>${extras}W</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span><strong>💡 TOTAL:</strong></span>
+                        <span><strong>${totalConsumption}W</strong></span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(255, 107, 53, 0.1); border-radius: 10px; border-left: 3px solid var(--primary-color);">
+                    <div style="font-size: 0.9rem; color: var(--text-secondary);">
+                        <strong style="color: var(--text-light);">Recommandations:</strong><br>
+                        • Certification: <strong style="color: var(--secondary-color);">${certification}</strong><br>
+                        • Efficacité: <strong style="color: var(--accent-color);">${efficiency}</strong><br>
+                        • Prix estimé: <strong style="color: var(--primary-color);">${priceRange}</strong><br>
+                        • Modèles: ${modelRecommendations}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Enhanced scroll reveal with stagger
+        const revealElements = document.querySelectorAll('.component-card');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0) rotateX(0)';
+                    }, index * 100);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(50px) rotateX(-15deg)';
+            el.style.transition = `all 0.8s ease ${index * 0.1}s`;
+            revealObserver.observe(el);
+        });
+    </script>
+</body>
+</html>
